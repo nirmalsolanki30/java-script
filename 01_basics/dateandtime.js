@@ -1,0 +1,11 @@
+let mydate=new Date();
+console.log(mydate.toString());
+console.log(mydate.toLocaleString());
+console.log(mydate.toDateString());
+let myTimeStamp = Date.now();
+console.log(myTimeStamp);
+let myCreatedDate= new Date("2023-11-04");
+console.log(myCreatedDate.getTime());
+let newDate=new Date();
+console.log(newDate.getMonth());
+console.log(newDate.getFullYear());
