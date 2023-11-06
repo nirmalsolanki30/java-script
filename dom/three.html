@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white;" >
+</body>
+<script>
+    const div=document.createElement('div');
+    console.log(div);
+    div.className="main"
+    div.id=Math.floor(Math.random()*10 + 1)
+    div.style.backgroundColor="green"
+    div.style.padding="15px"
+    div.setAttribute("title","Chai aur Code")
+
+    function makeid(length) {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    let counter = 0;
+    while (counter < length) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      counter += 1;
+    }
+    return result;
+}
+
+    
+    
+for (let i = 0; i < (Math.floor(Math.random()*100 + 1)); i++) {
+    const addtext=document.createTextNode(makeid(Math.floor(Math.random()*10 + 1))+" ");
+    div.appendChild(addtext)
+}
+document.body.appendChild(div)
+//console.log(makeid(Math.floor(Math.random()*10 + 1)));
+</script>
+</html>
